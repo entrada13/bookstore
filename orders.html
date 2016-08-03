@@ -1,0 +1,125 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> BookStore</title>
+    <link href="/Content/bootstrap.css" rel="stylesheet"/>
+<link href="/Content/site.css" rel="stylesheet"/>
+
+    <script src="/Scripts/modernizr-2.6.2.js"></script>
+
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brandBS" href="/">Application name</a>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li><a class="navbar-brand" href="/">Home</a></li>
+                    <li><a class="navbar-brandAbout" href="/Home/About">About</a></li>
+                    <li><a class="navbar-brandContact" href="/Home/Contact">Contact</a></li>
+                    
+                            <li><a class="ordersLink" href="/Admin/Orders">Orders</a></li>
+                            <li><a class="adminLink" href="/Admin">Admin</a></li>
+                        <li><a class="profileLink" href="/User/Profile">Profile</a></li>
+                        <li><a class="logoutLink" href="/Account/LogOff">Log Out</a></li>
+                    
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container body-content">
+        
+<script type="text/javascript" src="/pages/scripts.js"></script>
+            <div class="messageOrders">
+                <span class="messageOrders">
+<form action="/Admin/Orders" class="form-horizontal" method="get" role="form">                        <table style="border: none; width: 100%">
+                            <tr>
+                                <td></td>
+                                <td style="text-align:center; border: none; width: 7%" align="center">#</td>
+                                <td style="border: none; width: 1%"></td>
+                                <td style="text-align:center; border: none; width: 14%" align="center">Name</td>
+                                <td style="border: none; width: 1%"></td>
+                                <td style="text-align:center; border: none; width: 12%" align="center">Address</td>
+                                <td style="border: none; width: 4%"></td>
+                                <td style="text-align:center; border: none; width: 14%" align="center">Cover</td>
+                                <td style="border: none; width: 5%"></td>
+                                <td style="text-align:center; border: none; width: 14%" align="center">Title</td>
+                                <td style="border: none; width: 1%"></td>
+                                <td style="text-align:center; border: none; width: 14%" align="center">Author</td>
+                                <td style="border: none; width: 1%"></td>
+                                <td style="text-align:center; border: none; width: 14%" align="center">Price</td>
+                                <td></td>
+                            </tr>
+                        </table>
+                                <table style="border: none; width: 100%">
+                                    <tr>
+                                        <td style="border: none; width: 10%" align="center">#33</td>
+                                        <td style="border: none; width: 1%"><img src="/img/border.png" /></td>
+                                        <td style="border: none; width: 14%" align="center">User Test</td>
+                                        <td style="border: none; width: 1%"><img src="/img/border.png" /></td>
+                                        <td style="border: none; width: 14%" align="center">Green Lake Street, 19 Leeds</td>
+                                        <td style="border: none; width: 1%"><img src="/img/border.png" /></td>
+                                        <td style="border: none; width: 14%" align="center"><img src="/img/covers/DQJO2931FS3UNDAURZZ6.png" /></td>
+                                        <td style="border: none; width: 1%"><img src="/img/border.png" /></td>
+                                        <td style="border: none; width: 14%" align="center">The Archived</td>
+                                        <td style="border: none; width: 1%"><img src="/img/border.png" /></td>
+                                        <td style="border: none; width: 14%" align="center">V.E.Schwab</td>
+                                        <td style="border: none; width: 1%"><img src="/img/border.png" /></td>
+                                        <td style="border: none; width: 14%" align="center">$10</td>
+                                    </tr>
+                                    <tr style="border: none; width: 100%"><img src="/img/border2.png" /></tr>
+                                </table>
+                                <table style="border: none; width: 100%">
+                                    <tr>
+                                        <td style="border: none; width: 10%" align="center">#32</td>
+                                        <td style="border: none; width: 1%"><img src="/img/border.png" /></td>
+                                        <td style="border: none; width: 14%" align="center">Julia Busel</td>
+                                        <td style="border: none; width: 1%"><img src="/img/border.png" /></td>
+                                        <td style="border: none; width: 14%" align="center">ul. Platonova, 17-39 Birmingham</td>
+                                        <td style="border: none; width: 1%"><img src="/img/border.png" /></td>
+                                        <td style="border: none; width: 14%" align="center"><img src="/img/covers/1AOONOV28URGURIQ9S3Q.png" /></td>
+                                        <td style="border: none; width: 1%"><img src="/img/border.png" /></td>
+                                        <td style="border: none; width: 14%" align="center">A Game of Thrones</td>
+                                        <td style="border: none; width: 1%"><img src="/img/border.png" /></td>
+                                        <td style="border: none; width: 14%" align="center">George R.R. Martin</td>
+                                        <td style="border: none; width: 1%"><img src="/img/border.png" /></td>
+                                        <td style="border: none; width: 14%" align="center">$13</td>
+                                    </tr>
+                                    <tr style="border: none; width: 100%"><img src="/img/border2.png" /></tr>
+                                </table>
+                        <tr>
+                            <div id=" arrow_l" style="margin-bottom:90px; margin-left:225px;">
+
+                            </div>
+                            <div id="arrow_r" style="margin-top:-90px; margin-left:225px;">
+
+                                    <a href="/Admin/Orders?i=1"><span style="cursor: pointer;"><img class="image first" src="/img/arrowright.png" /><img class="image second" src="/img/arrowright2.png" /></span></a>
+                            </div>
+                    </tr>
+</form>                </span>
+
+            </div>
+
+    </div>
+
+    <script src="/Scripts/jquery-1.10.2.js"></script>
+
+    <script src="/Scripts/bootstrap.js"></script>
+<script src="/Scripts/respond.js"></script>
+
+    
+
+<!-- Visual Studio Browser Link -->
+<script type="application/json" id="__browserLink_initializationData">
+    {"appName":"Chrome","requestId":"f0fe2a7a2b704c829f59818bb5c48cac"}
+</script>
+<script type="text/javascript" src="http://localhost:57946/719e26ec78ff44bd9c8f8cfff967755d/browserLink" async="async"></script>
+<!-- End Browser Link -->
+
+</body>
+</html>
